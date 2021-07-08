@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Don’t get hit | Portafolio</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Don’t get hit" />
+<meta name="author" content="Lucas Lengyel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="About this project This is my first project ever. When I finished doing the full python course, I wanted to get into some real project. I had no experience at all, so I started from where I thought it would be easier, a game. I looked at some tutorials on youtube and found out that creating a simple game of a spaceship and asteroids, was perhaps the best way to start." />
+<meta property="og:description" content="About this project This is my first project ever. When I finished doing the full python course, I wanted to get into some real project. I had no experience at all, so I started from where I thought it would be easier, a game. I looked at some tutorials on youtube and found out that creating a simple game of a spaceship and asteroids, was perhaps the best way to start." />
+<meta property="og:site_name" content="Portafolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-05T12:19:54-03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Don’t get hit" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Don’t get hit","dateModified":"2021-05-05T12:19:54-03:00","datePublished":"2021-05-05T12:19:54-03:00","url":"/jekyll/update/2021/05/05/Don't-get-hit.html","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/update/2021/05/05/Don't-get-hit.html"},"author":{"@type":"Person","name":"Lucas Lengyel"},"description":"About this project This is my first project ever. When I finished doing the full python course, I wanted to get into some real project. I had no experience at all, so I started from where I thought it would be easier, a game. I looked at some tutorials on youtube and found out that creating a simple game of a spaceship and asteroids, was perhaps the best way to start.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://lin-css.netlify.com/dist/lin.min.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Portafolio" /></head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"><div class="row">
+  <div class="col-md-8 has-space-top has-space-bottom">
+    <a class="lin-logo" rel="author" href="/">Portafolio</a>
+  </div>
+  <div class="col-md-4 is-flex-center is-flex-end"><a class="lin-button is-lite" href="/about/">About Me</a>
+    &nbsp;</div>
+</div>
+</div>
+      <div class="col-md-12">
+        <div class="lin-card">
+          <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="row">
+    <div class="col-md-2 col-sm-12 is-hover-opaque">
+      <p class="has-space-top">
+        <time datetime="2021-05-05T12:19:54-03:00">May 5, 2021
+        </time></p>
+    </div>
+    <div class="col-md-10 col-sm-12">
+      <h1>Don&#39;t get hit</h1>
+    </div>
+  </header>
+
+  <div class="row">
+    <div class="col-md-2 col-sm-12">
+      &nbsp;
+    </div>
+    <div class="col-md-10 col-sm-12 has-space-top has-space-bottom">
+      <h2 id="about-this-project">About this project</h2>
+<p>This is my first project ever. When I finished doing the <em>full python course</em>, I wanted to get into some real project. I had no experience at all, so I started from where I thought it would be easier, a game. I looked at some tutorials on youtube and found out that creating a simple game of a spaceship and asteroids, was perhaps the best way to start.</p>
+
+<p>As it is my first project ever, I didn’t know a lot of stuff I know nowdays, like to name the main script <code class="language-plaintext highlighter-rouge">main.py</code>, to use more and better <em>classes</em>, etc… Despite all these things I can correct now, I decided to keep the project as it was, this means not changing anything the way I would do things today. The reason for this is beacause I belive the project has more value as it is to show the progress, and to help others understand how the code of a real beginner is.</p>
+
+<h2 id="the-main-menu">The Main Menu</h2>
+<p><img src="/Images/main_menu_nave_espacial.png" alt="image" width="500" /></p>
+
+<p>As my first project, for some reason, the idea of just making a game with no menu, made no sense. So I learnt different things while triyng to accomplish what I wanted. First of all, I learnt how to do a working button from scratch, and how to manage the collision of the hitbox of it with my mouse. Some programs will just put a button on screen with one click, but pygame doesn´t, so it is what it is…</p>
+
+<p>The second thing I learnt here, is to manage more than one window, this means, creating a window, closing it and creating another one. In this case there were 3 windows:</p>
+<ul>
+  <li>The Main Menu</li>
+  <li>The Game window</li>
+  <li>The Game Over window</li>
+</ul>
+
+<h2 id="the-play-game-window">The Play Game window</h2>
+<p><img src="/Images/game_nave_espacial.png" alt="image" width="500" /></p>
+
+<p>The Game it self doesn’t need much explanations, but there is one mechanic that perhaps does, and it was this particular  mechanic, that at the moment, took me several days to figure it out (I didn’t watch any videos of how to do it because I wanted to imagine it by myself).
+The thing I’m talking about is the <em>timer</em>. I needed a way to tell the asteroids when to appear, so I build a timer, using the module <code class="language-plaintext highlighter-rouge">time</code> from Python. The challenge was not this, but the increasing difficulty over time. At the end I managed to solve it, it doesn’t work perfectly, but at the moment I was really proud.</p>
+
+<p>There is also another mechanic that didn’t take me that long, but was something out of the grid for me. <em>How to make the asteroids randomly generate everywhere except from the main screen, so the spaceship has time to react?</em> 
+I managed to solve this problem too, If you want to see the solution, you can go to <a href="https://github.com/Luulas-bot/Don-t-game-hit-Game-/tree/main">My Github</a>. The main and only script is named <code class="language-plaintext highlighter-rouge">nave_espacial.py</code>.</p>
+
+<h2 id="the-game-over-window">The game over window</h2>
+<p><img src="/Images/game_over_nave_espacial.png" alt="image" width="500" /></p>
+
+<p>This window was not very difficult to do at the time. It is a simple <em>Game Over</em> screen that takes you back to the main menu.</p>
+
+<h2 id="wanna-try-it-out-yourself">Wanna try it out yourself?</h2>
+
+<p>If you want to try the game by yourself, you can go to <a href="https://github.com/Luulas-bot/Don-t-game-hit-Game-/tree/main">My Github</a> where you will find the repository and all of the files you need. There is also a <code class="language-plaintext highlighter-rouge">readme.md</code> file with some instructions to download it, install it and run it.</p>
+
+    </div>
+  </div><a class="u-url" href="/jekyll/update/2021/05/05/Don't-get-hit.html" hidden></a>
+</article>
+
+        </div>
+      </div>
+      <div class="col-md-12"><div class="row">
+  <div class="col-md-6 has-space-top has-space-bottom">
+    , styled with <a href="https://lin-css.netlify.com/">lin.css</a>
+  </div>
+  <div class="col-md-6 has-space-top has-space-bottom text-right"><span></span>
+<div class="spacer"></div>
+  </div>
+</div></div>
+    </div>
+  </div>
+</body>
+</html>
