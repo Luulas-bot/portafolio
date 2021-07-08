@@ -33,10 +33,14 @@ minima:
     googleplus: +jekyll
     keybase: jekyll
 
-theme: jekyll-lin
+remote_theme: Luulas-bot/portafolio
+
+permalink:    /:year-:month-:day/:title
+paginate:     5
 
 plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
   
