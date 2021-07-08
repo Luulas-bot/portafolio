@@ -2,13 +2,12 @@
 title: Portafolio
 author: Lucas Lengyel
 email: linyeravago@gmail.com
+baseurl: "portafolio"
 description: >- # this means to ignore newlines until "baseurl:"
   This is my Portafolio. Take a look at my posts where you can find
                   some really cool projects.
 
 show_excerpts: false # set to true to show excerpts on the homepage
-
-baseurl: "portafolio"
 
 lin:
   date_format: "%b %-d, %Y"
