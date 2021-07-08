@@ -35,7 +35,11 @@ minima:
 
 theme: jekyll-lin
 
+remote_theme: Luulas-bot/portafolio
+
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-remote-theme
   
