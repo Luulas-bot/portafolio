@@ -1,0 +1,42 @@
+
+title: Portafolio
+author: Lucas Lengyel
+email: linyeravago@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my Portafolio. Take a look at my posts where you can find
+                  some really cool projects.
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+baseurl: "portafolio"
+
+lin:
+  date_format: "%b %-d, %Y"
+
+  # path to the author avatar image
+  avatar_path: Images/profile.jpg
+
+minima: 
+  lin.social_links:
+    twitter: jekyllrb
+    github:  jekyll
+    medium:  jekyll
+    rss: rss
+    dribbble: jekyll
+    facebook: jekyll
+    flickr:   jekyll
+    instagram: jekyll
+    linkedin: jekyll
+    pinterest: jekyll
+    youtube_user: jekyll
+    youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    telegram: jekyll
+    googleplus: +jekyll
+    keybase: jekyll
+
+theme: jekyll-lin
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+  

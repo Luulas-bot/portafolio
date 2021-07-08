@@ -1,0 +1,93 @@
+---
+layout: post
+title:  "Snake"
+date:   2021-05-24 12:19:54 -0300
+categories: jekyll update
+---
+## About this project
+After being done with the previous project *Don't get hit*, I decided I would go for something similar but more complex. I was sure I learnt a lot of stuff, but I also knew I wasn't done with pygame. So I searched on internet a bit asking myself, *What would be the best project to do now?*. I came across the **Snake** game, which seemed just right at the moment.
+
+Overall the project was done in 2-3 weeks, from start to finish. It wasn't a hard project in general, but some particular mehcanics were pretty difficult, so in those I took like 5-6 days to figure them out. I will explain these further in the post.
+
+Anyways, after this project I realised how much I learnt compared to the start of this same work. The development of this game helped me totally understand the usage of classes, loops and the different kinds of info manipulations.
+
+The game has 3 different screens, just like the previous one:
+- The main menu screen.
+- The game screen
+- The game over screen
+
+## The main menu
+![image](/Images/main_menu_snake.png){: width="500" }
+
+The main menu is pretty similar to the one from the previous project. The only difference is that it has 3 buttons instead of 2. The third one is the music button, at the bottom right part. 
+The game has music on the background, which if you want, you can download it and listen to it, visiting [My Github](https://github.com/Luulas-bot/Don-t-game-hit-Game-/tree/main). 
+The mechanics of this third button are just the same as the other 2.
+
+## The game screen
+![image](/Images/game_snake.png){: width="500" }
+
+The game itself, as well as the previous one, doesn't need much explanation, due to the fact that everyone played *Snake* once. Through out the creation of it, there were 2 parts where i got stuck, imagining the best way to solve the issue. 
+
+**The speed problem**
+
+The first one was the speed at which the snake needed to move. The way pygame works with speeds, is that you decide at what framerate the game will be running. This means how many times per second the main loop of the game will be iterating itself. Generally you want your game to be running at 60 frames per second or higher (if this doesn't lag your computer), so the game goes smoothly. The issue here is that the snake is always moving, you just press the arrows to change directions, but not to move it foward one block the direction of the arrow you pressed.
+
+The code to manage an entity moving once everytime you press a button, in pygame would be something like this:
+
+```
+def move():
+    for event in pygame.event.get()
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP:
+                snake.y_pos -= 1
+```
+
+The code is just an example to show generally how it would be done if you want to move the snake one block at the time. Here the FPS of the game are helpful, because if you set the fps to 120 for example, the key will be registered by the game faster than at 30 FPS for example.
+
+The basic idea of the code for the actual work of the snake will be something like this:
+
+```
+done = False
+
+while not done:
+    for event in pygame.event.get()
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_UP:
+                snake.y_speed = -1
+                snake.x_speed = 0
+
+    snake.pos_y += snake.y_speed
+    snake.pos_x += snake.x_speed 
+
+    FPS(60)
+```
+
+I repite, this code will not work ever but is just to get an idea of what the problem is. What this part of the code up here does, is to direct wheter the snake should be going by setting the snake speeds to the value it corresponds. In this case, if you press the up arrow the `y_speed` will go negative (so the snake will go upwards) and the `x_speed` will go 0, (so the snake doesn't move). Then you just sum the speed to the actual position of the snake everytime the loop iterates, and there you go, a snake moving by itself.
+
+So *What's wrong?*
+
+I can't actually show you, but the snake with this piece of code, will move at the speed of light. 
+
+The solution I found for this is to create a timer that goes at it's own pace, so the position of the snake, instead of updating 60 times per second, updates 2 times per second (for example).
+
+**The tails problem**
+
+The other riddle I found myself into was, *How do I manage to make every tail follow the tail in front of it?*. This, at the moment, was not an easy solution, I tried a lot of things:
+- .txt files to save the coordinates.
+- saving the coordinates in a list and making pops.
+- follow the head coordinates but everytime + one step behind.
+
+None of these options worked. So at the end, the solution was fairly simple. I used a function from Python called `.zip()` wich allows you to iterate 2 lists at the same time. The great part about this function is that it makes cleaner working with 2 iterating lists, rather than having 2 *for loops* or more. What I did, was telling the new tail to read from the list of coordinates of the old tail, one step behind. So the list of the new tail iterates normally `list[:]`, but the other one iterates with one twist `list[1:]`.
+This goes to every tail that generates.
+
+## The game over screen.
+![image](/Images/game_over_snake.png){: width="500" }
+
+Just as the previous project, I did a quite simple interface to manage the game over. Just a screen that gives you 2 options:
+- Play again
+- Go to main menu
+
+The only difference stands where, instead of filling the screen with a color, I decided to let the last part of the game when you lose, as the background for the game over screen.
+
+## Wanna try it out yourself?
+If you want to try the game by yourself, you can go to [My Github](https://github.com/Luulas-bot/Snake.git) where you will find the repository and all of the files you need. There is also a `readme.md` file with some instructions to download it, install it and run it.
