@@ -17,7 +17,7 @@ The game has 3 different screens, just like the previous one:
 - The game over screen
 
 ## The main menu
-![image](/Images/main_menu_snake.png)
+![image](/Images/main_menu_snake.png){: width="500" }
 
 The main menu is pretty similar to the one from the previous project. The only difference is that it has 3 buttons instead of 2. The third one is the music button, at the bottom right part. 
 The game has music on the background, which if you want, you can download it and listen to it, visiting [My Github](https://github.com/Luulas-bot/Don-t-game-hit-Game-/tree/main). 
