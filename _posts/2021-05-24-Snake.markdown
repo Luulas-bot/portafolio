@@ -17,14 +17,14 @@ The game has 3 different screens, just like the previous one:
 - The game over screen
 
 ## The main menu
-![image](/Images/main_menu_snake.png){: width="500" }
+![image](Images/main_menu_snake.png){: width="500" }
 
 The main menu is pretty similar to the one from the previous project. The only difference is that it has 3 buttons instead of 2. The third one is the music button, at the bottom right part. 
 The game has music on the background, which if you want, you can download it and listen to it, visiting [My Github](https://github.com/Luulas-bot/Don-t-game-hit-Game-/tree/main). 
 The mechanics of this third button are just the same as the other 2.
 
 ## The game screen
-![image](/Images/game_snake.png){: width="500" }
+![image](Images/game_snake.png){: width="500" }
 
 The game itself, as well as the previous one, doesn't need much explanation, due to the fact that everyone played *Snake* once. Through out the creation of it, there were 2 parts where i got stuck, imagining the best way to solve the issue. 
 
@@ -81,7 +81,7 @@ None of these options worked. So at the end, the solution was fairly simple. I u
 This goes to every tail that generates.
 
 ## The game over screen.
-![image](/Images/game_over_snake.png){: width="500" }
+![image](Images/game_over_snake.png){: width="500" }
 
 Just as the previous project, I did a quite simple interface to manage the game over. Just a screen that gives you 2 options:
 - Play again
