@@ -10,7 +10,7 @@ This is my first project ever. When I finished doing the *full python course*, I
 As it is my first project ever, I didn't know a lot of stuff I know nowdays, like to name the main script `main.py`, to use more and better *classes*, etc... Despite all these things I can correct now, I decided to keep the project as it was, this means not changing anything the way I would do things today. The reason for this is beacause I belive the project has more value as it is to show the progress, and to help others understand how the code of a real beginner is.
 
 ## The Main Menu
-![image](Images/main_menu_nave_espacial.png){: width="500" }
+![image](/Images/main_menu_nave_espacial.png){: width="500" }
 
 As my first project, for some reason, the idea of just making a game with no menu, made no sense. So I learnt different things while triyng to accomplish what I wanted. First of all, I learnt how to do a working button from scratch, and how to manage the collision of the hitbox of it with my mouse. Some programs will just put a button on screen with one click, but pygame doesn´t, so it is what it is...
 
@@ -20,7 +20,7 @@ The second thing I learnt here, is to manage more than one window, this means, c
 - The Game Over window
 
 ## The Play Game window
-![image](Images/game_nave_espacial.png){: width="500" }
+![image](/Images/game_nave_espacial.png){: width="500" }
 
 The Game it self doesn't need much explanations, but there is one mechanic that perhaps does, and it was this particular  mechanic, that at the moment, took me several days to figure it out (I didn't watch any videos of how to do it because I wanted to imagine it by myself).
 The thing I'm talking about is the *timer*. I needed a way to tell the asteroids when to appear, so I build a timer, using the module `time` from Python. The challenge was not this, but the increasing difficulty over time. At the end I managed to solve it, it doesn't work perfectly, but at the moment I was really proud.
@@ -29,7 +29,7 @@ There is also another mechanic that didn't take me that long, but was something 
 I managed to solve this problem too, If you want to see the solution, you can go to [My Github](https://github.com/Luulas-bot/Don-t-game-hit-Game-/tree/main). The main and only script is named `nave_espacial.py`.
 
 ## The game over window
-![image](Images/game_over_nave_espacial.png){: width="500" }
+![image](/Images/game_over_nave_espacial.png){: width="500" }
 
 This window was not very difficult to do at the time. It is a simple *Game Over* screen that takes you back to the main menu.
 

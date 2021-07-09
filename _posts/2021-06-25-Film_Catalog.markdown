@@ -28,13 +28,13 @@ Let's go step by step, screen by screen, shall we?
 - Edit window
 
 ## The login window
-![image](Images/login_film.png){: width="500" }
+![image](/Images/login_film.png){: width="500" }
 
 The Login screen is pretty simple, as there are only 3 things that can interact with the user. 2 of them are textboxes, the one to write the username and the other one to write the password
 
 The password will be shown like this:
 
-![image](Images/password_film.png){: width="500" }
+![image](/Images/password_film.png){: width="500" }
 
 The other thing that can interact with the user is the text at the bottom right part of the window. If the text get pressed, it will redirect you to the *sign-up* window.
 
@@ -50,7 +50,7 @@ The second one is also quite simple, but worth of some explanation.
 Well, through `SQL Alchemy` for the logic of the Login, we need to create 1 table, the user one. Then, once the username and the password are in the database (these 2 things are inserted through the sign-up window), a function called *enter_mechanics* does the rest. It registers what the user entered and compares that information to the username and their passwords in the database. If the comparison is correct, it lets you go to the main menu, instead if something is wrong, an error message pops out.
 
 ## The sign-up window
-![image](Images/sign_up_film.png){: width="500" }
+![image](/Images/sign_up_film.png){: width="500" }
 
 The Sign-up window is pretty similar to the *login* window. The differences are 2:
 - There are two passwords fields. One to wirte it down and the other one to confirm it.
@@ -59,7 +59,7 @@ The Sign-up window is pretty similar to the *login* window. The differences are 
 The logic behind the insertion of information dosen't need much explanation, as it is just an insert of 2 things into to designated columns.
 
 ## The main menu screen
-![image](Images/main_menu_film.png){: width="500" }
+![image](/Images/main_menu_film.png){: width="500" }
 
 The main screen, is the core of all the program. The things you can do here are:
 - See in a comfortable display all the movies you have in the database.
@@ -131,7 +131,7 @@ The list at the bottom is used to blit all the movies on screen. That's also why
 Other than this display, there was not much trouble creating the buttons and making them work.
 
 ## The new movie window
-![image](Images/new_movie_film.png){: width="500" }
+![image](/Images/new_movie_film.png){: width="500" }
 
 This window is the one where you create a movie. All the options you can put on the movie are not in this window, just beacuse I thought it would be easier for me and the user, to keep it simplier at the beginning. Once you created the film, if you want to put more attributes to it, you will need to edit it.
 
@@ -164,7 +164,7 @@ This logic wasn't the worst part, the worst part began after I created this logi
 After solving all this, finally I got a working window where you can add the movie you want. The connection with the database is quite easy. You just insert all the data the user wrote, and manage the errors.
 
 ## The edit window
-![image](Images/edit_film.png){: width="500" }
+![image](/Images/edit_film.png){: width="500" }
 
 This is the last window I created and it wasn't really hard to do, as it's almost a copy of the *New movie* one. The thing I added in comparison to the other one are the 5 buttons you can see on the image, which work as filters or to delete the movie. 
 
