@@ -35,7 +35,6 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    jekyll-paginate (1.1.0)
     jekyll-remote-theme (0.4.3)
       addressable (~> 2.0)
       jekyll (>= 3.5, < 5.0)
@@ -89,7 +88,6 @@ DEPENDENCIES
   jekyll (~> 4.2.0)
   jekyll-feed (~> 0.12)
   jekyll-lin
-  jekyll-paginate
   jekyll-remote-theme
   minima (~> 2.5)
   tzinfo (~> 1.2)

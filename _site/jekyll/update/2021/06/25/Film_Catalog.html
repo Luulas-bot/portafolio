@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Film Catalog | Portafolio</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Film Catalog" />
+<meta name="author" content="Lucas Lengyel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="About this project The idea for this project emerged from the need I felt to create something big, that unites the things I know about SQL with all I learnt from Python. As a result, the Film Catalog emerged. A program which saves all the movies you want in a database, with a lot of flexibility over the tags you wanna put to the film. You can tag the movie you are inserting as: to watch, already seen, top, worst. You can select in which country the movie was made and at what genre it belongs. There is also the possibility to write a personal description of what you felt about the movie. Last you can rate it as you want." />
+<meta property="og:description" content="About this project The idea for this project emerged from the need I felt to create something big, that unites the things I know about SQL with all I learnt from Python. As a result, the Film Catalog emerged. A program which saves all the movies you want in a database, with a lot of flexibility over the tags you wanna put to the film. You can tag the movie you are inserting as: to watch, already seen, top, worst. You can select in which country the movie was made and at what genre it belongs. There is also the possibility to write a personal description of what you felt about the movie. Last you can rate it as you want." />
+<meta property="og:site_name" content="Portafolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-25T12:19:54-03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Film Catalog" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Film Catalog","dateModified":"2021-06-25T12:19:54-03:00","datePublished":"2021-06-25T12:19:54-03:00","url":"/jekyll/update/2021/06/25/Film_Catalog.html","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/update/2021/06/25/Film_Catalog.html"},"author":{"@type":"Person","name":"Lucas Lengyel"},"description":"About this project The idea for this project emerged from the need I felt to create something big, that unites the things I know about SQL with all I learnt from Python. As a result, the Film Catalog emerged. A program which saves all the movies you want in a database, with a lot of flexibility over the tags you wanna put to the film. You can tag the movie you are inserting as: to watch, already seen, top, worst. You can select in which country the movie was made and at what genre it belongs. There is also the possibility to write a personal description of what you felt about the movie. Last you can rate it as you want.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://lin-css.netlify.com/dist/lin.min.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Portafolio" /></head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"><div class="row">
+  <div class="col-md-8 has-space-top has-space-bottom">
+    <a class="lin-logo" rel="author" href="/">Portafolio</a>
+  </div>
+  <div class="col-md-4 is-flex-center is-flex-end"><a class="lin-button is-lite" href="/about/">About Me</a>
+    &nbsp;</div>
+</div>
+</div>
+      <div class="col-md-12">
+        <div class="lin-card">
+          <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="row">
+    <div class="col-md-2 col-sm-12 is-hover-opaque">
+      <p class="has-space-top">
+        <time datetime="2021-06-25T12:19:54-03:00">Jun 25, 2021
+        </time></p>
+    </div>
+    <div class="col-md-10 col-sm-12">
+      <h1>Film Catalog</h1>
+    </div>
+  </header>
+
+  <div class="row">
+    <div class="col-md-2 col-sm-12">
+      &nbsp;
+    </div>
+    <div class="col-md-10 col-sm-12 has-space-top has-space-bottom">
+      <h2 id="about-this-project">About this project</h2>
+<p>The idea for this project emerged from the need I felt to create something big, that unites the things I know about SQL with all I learnt from Python. As a result, the <strong>Film Catalog</strong> emerged. A program which saves all the movies you want in a database, with a lot of flexibility over the tags you wanna put to the film. You can tag the movie you are inserting as: <em>to watch</em>, <em>already seen</em>, <em>top</em>, <em>worst</em>. You can select in which country the movie was made and at what genre it belongs. There is also the possibility to write a personal description of what you felt about the movie. Last you can rate it as you want.</p>
+
+<p>This tags, not only belong to the movie, just as a tag, but are also filters. Imagine you have a thousand of movies in your personal catalog. In order to save time, you can just click the <em>to watch</em> button, and it will automatically select only the movies that have this tag on.</p>
+
+<p>The <strong>objective</strong> is to answer the question that often comes from a friend, <em>Do you have any movies to recommend?</em>. This questions will not be unanswered anymore. You just tell him <em>wait a sec</em>. Then you enter into your personal catalog, search for the top movies you have ever seen, and there you go.</p>
+
+<p><em>What did I need for this project?</em></p>
+
+<p>To make this idea come alive I needed several things:</p>
+<ul>
+  <li>A language, in this case Python.</li>
+  <li>An UI module, which in this case I used <em>pygame</em>. Further in this post I will explain why is not a good idea programming an UI with pygame.</li>
+  <li>A module to connect the program to a database. I chose <strong>SQL Alchemy</strong>.</li>
+  <li>An SQL motor to run all the actions you wanna do to the database.</li>
+</ul>
+
+<p>A part from this there are alse the screens.
+Let’s go step by step, screen by screen, shall we?</p>
+<ul>
+  <li>Login window</li>
+  <li>Sign-up window</li>
+  <li>Main menu screen</li>
+  <li>New movie window</li>
+  <li>Edit window</li>
+</ul>
+
+<h2 id="the-login-window">The login window</h2>
+<p><img src="/Images/login_film.png" alt="image" width="500" /></p>
+
+<p>The Login screen is pretty simple, as there are only 3 things that can interact with the user. 2 of them are textboxes, the one to write the username and the other one to write the password</p>
+
+<p>The password will be shown like this:</p>
+
+<p><img src="/Images/password_film.png" alt="image" width="500" /></p>
+
+<p>The other thing that can interact with the user is the text at the bottom right part of the window. If the text get pressed, it will redirect you to the <em>sign-up</em> window.</p>
+
+<p>The logic behind this window, can be divided in 2:</p>
+<ul>
+  <li>The UI logic.</li>
+  <li>The Database logic.</li>
+</ul>
+
+<p>The first one is pretty simple, so I won’t explain anything about that.
+The second one is also quite simple, but worth of some explanation.</p>
+
+<p><em>How does it work?</em></p>
+
+<p>Well, through <code class="language-plaintext highlighter-rouge">SQL Alchemy</code> for the logic of the Login, we need to create 1 table, the user one. Then, once the username and the password are in the database (these 2 things are inserted through the sign-up window), a function called <em>enter_mechanics</em> does the rest. It registers what the user entered and compares that information to the username and their passwords in the database. If the comparison is correct, it lets you go to the main menu, instead if something is wrong, an error message pops out.</p>
+
+<h2 id="the-sign-up-window">The sign-up window</h2>
+<p><img src="/Images/sign_up_film.png" alt="image" width="500" /></p>
+
+<p>The Sign-up window is pretty similar to the <em>login</em> window. The differences are 2:</p>
+<ul>
+  <li>There are two passwords fields. One to wirte it down and the other one to confirm it.</li>
+  <li>The window doesn’t read from the database, instead it inserts the infromation.</li>
+</ul>
+
+<p>The logic behind the insertion of information dosen’t need much explanation, as it is just an insert of 2 things into to designated columns.</p>
+
+<h2 id="the-main-menu-screen">The main menu screen</h2>
+<p><img src="/Images/main_menu_film.png" alt="image" width="500" /></p>
+
+<p>The main screen, is the core of all the program. The things you can do here are:</p>
+<ul>
+  <li>See in a comfortable display all the movies you have in the database.</li>
+  <li>Apply filters to narrow the searchs.</li>
+  <li>Exit the program obviously.</li>
+  <li>By clicking on a movie, go to the edition window of the movie.</li>
+  <li>Go to the window to create a new movie by clinking on the <em>add new</em> button.</li>
+</ul>
+
+<p>The logic behind the filters is really important, because it’s one of the main functions of the program. Basically when you touch a filter, it calls a function from the class <strong>DbManager</strong>, located in the <code class="language-plaintext highlighter-rouge">Database_Manager</code> folder. The parameter you pass to it (which is a number) decides which filter you want to apply. once the function is called, it does the following things in order:</p>
+<ul>
+  <li>It gets the ID of the logged in user.</li>
+  <li>It gets all the movies of the user, not every movie in the database.</li>
+  <li>Through the parameter, applies the correct filter. For example if you pressed the <em>to watch</em> button, it will search in the database for all the movies that have the <em>to watch</em> field with an 1 (1 = True, 0 = False).</li>
+  <li>Then it creates a set of the two lists, to get the duplicates. These ones will be both the movies of the working user, and the movies with the filter applied.</li>
+  <li>The rest is quite simple. It just gets the names of the movies through the IDs and the genre names.</li>
+</ul>
+
+<p>This explanation works with the filters: <em>to watch</em>, <em>already seen</em>, <em>top</em>, <em>worst</em>.
+The 2 other filters (the genre one and the country one) work in a different way. As the logic from these last two is almost the same as the other filters, it’s only worth to explain where these two difer with the other ones.</p>
+
+<p>The genre filter, instead of searching by the bit range of the selected column, it works with the parameter you pass to the function, that is the genre itself. For example if the parameter (because you clicked in the <em>action</em> button) is action, then the function will get the id of the genre (in this case ACC), it will get all the genres IDs from all the movies, and then filter the ones that are the genre id you selected (ACC). Once this is all done, it will get all the IDs of the movies that have the same genre ID, and finally create a set to get the duplicates within all the movies in the db with the genre filter you applied, and the ones the user have.</p>
+
+<p>After this, the <em>genre_filter</em> function works the same way as the other filters function.</p>
+
+<p>The country filter is simplier than the genre one. It just register the user input (for example USA) and filters all the movies by this country ID. Then get the set, and etc.</p>
+
+<p>The more challenging part about creating this menu was for sure the display of the movies. From the beginning I was avoiding this part, but at the end i got no choice. So the problem, if you want to think about it, would be seomthing like this:</p>
+
+<p><em>How can you display all the movies on the screen, and make it interactive?</em></p>
+
+<p>I had really wild ideas. Like making a scroll view, using an external program, mixing pygame with Qt5 or giving up. I tried different things but at the end I managed to solve the problem with the function called <em>init movies</em>.</p>
+
+<p>This is the code for the function:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def init_movies(self):
+        self.movies_list.clear()
+        Movies.movies_list_temp.clear()
+        if self.index &lt; len(e.movies_display_name):    
+            self.movie = Movies("Images/movies_rect.png", (290, 120), (300, 130), (300, 230), e.movies_display_name[self.index], e.movies_display_genre_name[self.index])
+        self.index += 1
+        if self.index &lt; len(e.movies_display_name):  
+            self.movie2 = Movies("Images/movies_rect.png", (540, 120), (550, 130), (550, 230), e.movies_display_name[self.index], e.movies_display_genre_name[self.index])
+        self.index += 1
+        if self.index &lt; len(e.movies_display_name):  
+            self.movie3 = Movies("Images/movies_rect.png", (800, 120), (810, 130), (810, 230), e.movies_display_name[self.index], e.movies_display_genre_name[self.index])
+        self.index += 1
+        if self.index &lt; len(e.movies_display_name):  
+            self.movie4 = Movies("Images/movies_rect.png", (290, 450), (300, 460), (300, 560), e.movies_display_name[self.index], e.movies_display_genre_name[self.index])
+        self.index += 1
+        if self.index &lt; len(e.movies_display_name):  
+            self.movie5 = Movies("Images/movies_rect.png", (540, 450), (550, 460), (550, 560), e.movies_display_name[self.index], e.movies_display_genre_name[self.index])
+        self.index += 1
+        if self.index &lt; len(e.movies_display_name):  
+            self.movie6 = Movies("Images/movies_rect.png", (800, 450), (810, 460), (810, 560), e.movies_display_name[self.index], e.movies_display_genre_name[self.index])
+        else:
+            pass
+
+        for i in Movies.movies_list_temp:
+            self.movies_list.append(i)
+</code></pre></div></div>
+
+<p>Let’s go step by step on this one.</p>
+
+<p>The movies that will be displayed are 6, that’s why there are 6 <em>self.movie</em>. The way it functions is more or less like this. Where the main menu window function opens up, it creates a variable name <em>self.index</em>, which will be use to index a list of all the movies selected. Then you corroborate if the index is smaller than the length of the list with all the movies (this avoids the error of creating a movie without a name or something else). Once this is done, the index get a plus 1, so it reads the following movie in the list. That’s the whole logic.</p>
+
+<p>You maybe will be wondering, <em>What does that magical class called Movies?</em>. That class is the graphical part of the logic. It just creates a rectangle with the name of the movie and the genre name in it.</p>
+
+<p>The list at the bottom is used to blit all the movies on screen. That’s also why we gotta clear the list at the beginning of the function.</p>
+
+<p>Other than this display, there was not much trouble creating the buttons and making them work.</p>
+
+<h2 id="the-new-movie-window">The new movie window</h2>
+<p><img src="/Images/new_movie_film.png" alt="image" width="500" /></p>
+
+<p>This window is the one where you create a movie. All the options you can put on the movie are not in this window, just beacuse I thought it would be easier for me and the user, to keep it simplier at the beginning. Once you created the film, if you want to put more attributes to it, you will need to edit it.</p>
+
+<p>This particular window, that seems so innocent, so simple, was a torture to create. The description textbox had the whole fault, but, <em>Why?</em>.</p>
+
+<p>Let’s begin telling a little bit about pygame. This module is great to create a game, it has all you need, but it’s not made, I repite, it’s <strong>NOT</strong> made to create a great UI. The reason is quite simple, when you want to create an UI, you want the simple stuff to be already done, like the buttons. In pygame you gotta do every button by yourself from scratch. This means registering all the events on the screen, getting when the user pressed the mouse, getting where the user pressed the mouse, wich button is pressed and what does that button do. There are things to make it simplier, but overall it’s not good for UI creation.</p>
+
+<p>So imagine if creating a button is that hard (by hard I mean that you have a lot of things to worry about), <em>how hard could it be to create a notepad’s type textbox?</em></p>
+
+<p>The answer for me at least was <strong>HARD</strong>.</p>
+
+<p>The code for the working of the description textbox is this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def description_mechanics(self):    
+    if self.event.key == pygame.K_BACKSPACE and self.description_text.state:
+        self.description_list[self.index].text = self.description_list[self.index].text[:-1]
+        if self.index &lt; 15 and len(self.description_list[self.index].text) == 0 and self.index != 0:
+            self.index -= 1
+    elif self.description_text.state and len(self.description_list[self.index].text) &lt; 61:
+        self.description_list[self.index].text += self.event.unicode
+    elif len(self.description_list[self.index].text) &gt; 59 and self.index &lt; 15 and self.description_text.state:
+        self.index += 1
+</code></pre></div></div>
+
+<p>It doesn’t feel like it’s hard to imagine this logic. For me, creating a from scratch logic to get a working textbox with different lines and different types of commands (like when you press backspace and there are no more letters in that line, so you go to the upper one) was pretty hard. In the code I’m showing you, the enter, backspace and tab mechanics are not included.</p>
+
+<p>This logic wasn’t the worst part, the worst part began after I created this logic, when I have to fight against, at least 20 different bugs, which had no explanation at all. These bugs generated because pygame is not created for these types of work.</p>
+
+<p>After solving all this, finally I got a working window where you can add the movie you want. The connection with the database is quite easy. You just insert all the data the user wrote, and manage the errors.</p>
+
+<h2 id="the-edit-window">The edit window</h2>
+<p><img src="/Images/edit_film.png" alt="image" width="500" /></p>
+
+<p>This is the last window I created and it wasn’t really hard to do, as it’s almost a copy of the <em>New movie</em> one. The thing I added in comparison to the other one are the 5 buttons you can see on the image, which work as filters or to delete the movie.</p>
+
+<h2 id="wanna-try-it-out-yourself">Wanna try it out yourself?</h2>
+
+<p>Unfortunatly you can’t test this program, due to the fact that is connected to a local database in my computer. This database runs with a motor that cannot be distributed. There is also no way for me to host for other people around the world, as my computer is not turned on all day. The only solution is to pay a server, which currently I’m not willing to do. Anyways you can see the project’s code in <a href="https://github.com/Luulas-bot/Film_Catalog.git">My Github</a>. I will also upload a video soon, showing how everything works together.</p>
+
+
+    </div>
+  </div><a class="u-url" href="/jekyll/update/2021/06/25/Film_Catalog.html" hidden></a>
+</article>
+
+        </div>
+      </div>
+      <div class="col-md-12"><div class="row">
+  <div class="col-md-6 has-space-top has-space-bottom">
+    , styled with <a href="https://lin-css.netlify.com/">lin.css</a>
+  </div>
+  <div class="col-md-6 has-space-top has-space-bottom text-right"><span></span>
+<div class="spacer"></div>
+  </div>
+</div></div>
+    </div>
+  </div>
+</body>
+</html>
